@@ -8,33 +8,33 @@ import java.awt.event.*;
 public class Ejercicio7 extends Frame implements WindowListener, ActionListener 
 {
 	private static final long serialVersionUID = 1L;
-	Dialog dlgArtNuevo = new Dialog(this, "Diálogo con mensaje", true);
+	Dialog dlgArtNuevo = new Dialog(this, "Diálogo con mensaje", true);
 	Label lblArtNuevo = new Label("Nuevo Articulo");
-	Dialog dlgArtEliminar = new Dialog(this, "Diálogo con mensaje", true);
+	Dialog dlgArtEliminar = new Dialog(this, "Diálogo� con mensaje", true);
 	Label lblArtEliminar = new Label("Articulo Eliminar");
-	Dialog dlgArtConsul = new Dialog(this, "Diálogo con mensaje", true);
+	Dialog dlgArtConsul = new Dialog(this, "Diálogo con mensaje", true);
 	Label lblArtConsul = new Label("Articulo Consultar");
-	Dialog dlgCliNuevo = new Dialog(this, "Diálogo con mensaje", true);
+	Dialog dlgCliNuevo = new Dialog(this, "Diálogo con mensaje", true);
 	Label lblCliNuevo = new Label("Nuevo Cliente");
-	Dialog dlgCliEliminar = new Dialog(this, "Diálogo con mensaje", true);
+	Dialog dlgCliEliminar = new Dialog(this, "Diálogo con mensaje", true);
 	Label lblCliEliminar = new Label("Eliminar Cliente");
-	Dialog dlgCliConsul = new Dialog(this, "Diálogo con mensaje", true);
+	Dialog dlgCliConsul = new Dialog(this, "Diálogo con mensaje", true);
 	Label lblCliConsul = new Label("Consultar Cliente");
-	Dialog dlgFactNuevo = new Dialog(this, "Diálogo con mensaje", true);
+	Dialog dlgFactNuevo = new Dialog(this, "Dialogo con mensaje", true);
 	Label lblFactNuevo = new Label("Nueva Factura");
-	Dialog dlgFactConsul = new Dialog(this, "Diálogo con mensaje", true);
+	Dialog dlgFactConsul = new Dialog(this, "Dialogo con mensaje", true);
 	Label lblFactConsul = new Label("Consultar Factura");
-	// En primer lugar creamos la barra de menú
+	// En primer lugar creamos la barra de menÃº
 	MenuBar barraMenu = new MenuBar();
 
-	// Ahora creamos los elementos principales del menú
+	// Ahora creamos los elementos principales del menÃº
 	Menu menuArt = new Menu("Articulo");
 	Menu menuCli = new Menu("Clientes");
 	Menu menuFact = new Menu("Facturas");
 
-	// Y Ahora los elementos de cada opción del menú principal
+	// Y Ahora los elementos de cada opciÃ³n del menÃº principal
 
-	// Los siguientes son MenuItem pues dentro no tienen submenús
+	// Los siguientes son MenuItem pues dentro no tienen submenÃºs
 	MenuItem mniArtNuevo = new MenuItem("Nuevo Articulo");
 	MenuItem mniArtEliminar = new MenuItem("Eliminar Articulo");
 	MenuItem mniArtConsul = new MenuItem("Consultar Articulo");
@@ -49,10 +49,10 @@ public class Ejercicio7 extends Frame implements WindowListener, ActionListener
 	public Ejercicio7()
 	{
 		setLayout (new FlowLayout());
-		setTitle ("Menú" );
-		// Establecemos la barra de menú
+		setTitle ("Menu" );
+		// Establecemos la barra de menÃº
 		setMenuBar(barraMenu);
-		// Empezamos a añadirle los elementos
+		// Empezamos a aÃ±adirle los elementos
 		// menu Articulo
 		menuArt.add(mniArtNuevo);
 		menuArt.add(mniArtEliminar);
@@ -70,7 +70,7 @@ public class Ejercicio7 extends Frame implements WindowListener, ActionListener
 		setLocationRelativeTo(null);
 		setSize(200,200);
 		addWindowListener(this);
-		// Se añaden los Listeners a las opciones de los submenús no a las opciones del menú 
+		// Se anÌƒaden los Listeners a las opciones de los submenuÌ�s no a las opciones del menuÌ� 
 		mniArtNuevo.addActionListener((ActionListener) this);
 		mniArtEliminar.addActionListener((ActionListener) this);
 		mniArtConsul.addActionListener((ActionListener) this);
@@ -83,51 +83,51 @@ public class Ejercicio7 extends Frame implements WindowListener, ActionListener
 		dlgArtNuevo.setLayout(new FlowLayout());
 		dlgArtNuevo.add(lblArtNuevo);
 		dlgArtNuevo.setSize(200,150);
-		//Para poder cerrar el Diálogo 
+		//Para poder cerrar el DiaÌ�logo 
 		dlgArtNuevo.addWindowListener(this);
 		
 		dlgArtEliminar.setLayout(new FlowLayout());
 		dlgArtEliminar.add(lblArtEliminar);
 		dlgArtEliminar.setSize(200,150);
-		//Para poder cerrar el Diálogo 
+		//Para poder cerrar el DiaÌ�logo 
 		dlgArtEliminar.addWindowListener(this);
 		
 		dlgArtConsul.addWindowListener(this);
 		dlgArtConsul.setLayout(new FlowLayout());
 		dlgArtConsul.add(lblArtConsul);
 		dlgArtConsul.setSize(200,150);
-		//Para poder cerrar el Diálogo 
+		//Para poder cerrar el DiaÌ�logo 
 		dlgArtConsul.addWindowListener(this);
 		
 		dlgCliNuevo.setLayout(new FlowLayout());
 		dlgCliNuevo.add(lblCliNuevo);
 		dlgCliNuevo.setSize(200,150);
-		//Para poder cerrar el Diálogo 
+		//Para poder cerrar el DiaÌ�logo 
 		dlgCliNuevo.addWindowListener(this);
 		
 		dlgCliEliminar.setLayout(new FlowLayout());
 		dlgCliEliminar.add(lblCliEliminar);
 		dlgCliEliminar.setSize(200,150);
-		//Para poder cerrar el Diálogo 
+		//Para poder cerrar el DiaÌ�logo 
 		dlgCliEliminar.addWindowListener(this);
 		
 		dlgCliConsul.addWindowListener(this);
 		dlgCliConsul.setLayout(new FlowLayout());
 		dlgCliConsul.add(lblCliConsul);
 		dlgCliConsul.setSize(200,150);
-		//Para poder cerrar el Diálogo 
+		//Para poder cerrar el DiaÌ�logo 
 		dlgCliConsul.addWindowListener(this);
 		
 		dlgFactNuevo.setLayout(new FlowLayout());
 		dlgFactNuevo.add(lblFactNuevo);
 		dlgFactNuevo.setSize(200,150);
-		//Para poder cerrar el Diálogo
+		//Para poder cerrar el DiaÌ�logo
 		dlgFactNuevo.addWindowListener(this);
 		
 		dlgFactConsul.setLayout(new FlowLayout());
 		dlgFactConsul.add(lblFactConsul);
 		dlgFactConsul.setSize(200,150);
-		//Para poder cerrar el Diálogo 
+		//Para poder cerrar el DiaÌ�logo 
 		dlgFactConsul.addWindowListener(this);
 		
 		setVisible(true);
