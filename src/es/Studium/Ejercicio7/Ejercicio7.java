@@ -208,7 +208,7 @@ public class Ejercicio7 extends Frame implements WindowListener, ActionListener
 		{
 			dlgFactNuevo.setVisible(false); 
 		}
-		else if(dlgCliConsul.isActive()) 
+		else if(dlgFactConsul.isActive()) 
 		{
 			dlgFactConsul.setVisible(false); 
 		}
